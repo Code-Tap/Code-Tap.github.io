@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Enable Spell Check in SublimeWhen you are writing in Markdown, a spell-check tends to come in very handy. Luckily it’s simple enough to enable specifically for Markdown.
+Open or create a markdown file">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sublime Spell-Check">
+<meta property="og:url" content="http://leighwilson.xyz/2016/11/Sublime-Spell-Check/index.html">
+<meta property="og:site_name" content="The Code_Tap">
+<meta property="og:description" content="Enable Spell Check in SublimeWhen you are writing in Markdown, a spell-check tends to come in very handy. Luckily it’s simple enough to enable specifically for Markdown.
+Open or create a markdown file">
+<meta property="og:updated_time" content="2016-11-18T10:45:41.240Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sublime Spell-Check">
+<meta name="twitter:description" content="Enable Spell Check in SublimeWhen you are writing in Markdown, a spell-check tends to come in very handy. Luckily it’s simple enough to enable specifically for Markdown.
+Open or create a markdown file">
+    
+    
+    <!-- title -->
+    <title>Sublime Spell-Check</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="https://github.com/Code-Tap">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/Make-a-DVD/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/helloworld/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&text=Sublime Spell-Check"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&title=Sublime Spell-Check"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&is_video=false&description=Sublime Spell-Check"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Sublime Spell-Check&body=Check out this article: http://leighwilson.xyz/2016/11/Sublime-Spell-Check/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&title=Sublime Spell-Check"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&title=Sublime Spell-Check"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&title=Sublime Spell-Check"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&title=Sublime Spell-Check"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://leighwilson.xyz/2016/11/Sublime-Spell-Check/&name=Sublime Spell-Check&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Enable-Spell-Check-in-Sublime"><span class="toc-number">1.</span> <span class="toc-text">Enable Spell Check in Sublime</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Sublime Spell-Check
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">The Code_Tap</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-11-18T09:35:01.000Z" itemprop="datePublished">11-2016</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Enable-Spell-Check-in-Sublime"><a href="#Enable-Spell-Check-in-Sublime" class="headerlink" title="Enable Spell Check in Sublime"></a>Enable Spell Check in Sublime</h1><p>When you are writing in Markdown, a spell-check tends to come in very handy. Luckily it’s simple enough to enable specifically for Markdown.</p>
+<p>Open or create a markdown file. ( *.md )</p>
+<p>Go to:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Preferences] -&gt; [Settings - More] -&gt; [Syntax Specific - User]</div></pre></td></tr></table></figure></p>
+<p>This will open up a file named: Markdown.sublime-settings</p>
+<p>Add the following to it:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;spell_check&quot;: true</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Then save it in<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~/.config/sublime-text2/Packages/User/</div></pre></td></tr></table></figure></p>
+<p>It should already be in that directory so just go ahead and save.</p>
+<p>If you’ve done it right you should now have spell check enabled for when you’re editing Markdown files, but not for any other file types.</p>
+
+  </div>
+</article>
+
+
+
+      </div>
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2016 The Code_Tap
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="https://github.com/Code-Tap">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>

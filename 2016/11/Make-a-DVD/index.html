@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="I decided that I needed to burn some video files to DVD this weekend, but instead of just firing up K3B and getting the job done, I thought that instead i’d take my time with this and build\modify a s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Make a DVD">
+<meta property="og:url" content="http://leighwilson.xyz/2016/11/Make-a-DVD/index.html">
+<meta property="og:site_name" content="The Code_Tap">
+<meta property="og:description" content="I decided that I needed to burn some video files to DVD this weekend, but instead of just firing up K3B and getting the job done, I thought that instead i’d take my time with this and build\modify a s">
+<meta property="og:updated_time" content="2016-11-27T02:12:46.646Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Make a DVD">
+<meta name="twitter:description" content="I decided that I needed to burn some video files to DVD this weekend, but instead of just firing up K3B and getting the job done, I thought that instead i’d take my time with this and build\modify a s">
+    
+    
+    <!-- title -->
+    <title>Make a DVD</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="https://github.com/Code-Tap">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/12/How-to-split-a-pdf-every-2-pages-using-Python/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/Sublime-Spell-Check/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://leighwilson.xyz/2016/11/Make-a-DVD/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&text=Make a DVD"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&title=Make a DVD"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&is_video=false&description=Make a DVD"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Make a DVD&body=Check out this article: http://leighwilson.xyz/2016/11/Make-a-DVD/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&title=Make a DVD"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&title=Make a DVD"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&title=Make a DVD"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&title=Make a DVD"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://leighwilson.xyz/2016/11/Make-a-DVD/&name=Make a DVD&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Environment-Variable"><span class="toc-number">1.</span> <span class="toc-text">Environment Variable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Running-the-script"><span class="toc-number">2.</span> <span class="toc-text">Running the script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Download"><span class="toc-number">3.</span> <span class="toc-text">Download</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">4.</span> <span class="toc-text">Usage</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Make a DVD
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">The Code_Tap</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-11-26T23:50:31.000Z" itemprop="datePublished">11-2016</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/bash-linux-cli-script/">bash, linux, cli, script</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>I decided that I needed to burn some video files to DVD this weekend, but instead of just firing up K3B and getting the job done, I thought that instead i’d take my time with this and build\modify a script so that I can do it from the command line instead. I managed to find one that had potential but didnt work as it was about 4-5 years old, so ill present the finished script that does.</p>
+<p>Before you can run this script you will need a few programs to be installed from the command line first.</p>
+<p>Debian/Ubuntu:<br><code>apt-get install ffmpeg dvdauthor</code><br>Arch:<br><code>pacman -Ss ffmpeg dvdauthor</code></p>
+<p>Once that is done you can then create the script file in the folder with the video you want to convert:<br><code>touch makeDVD.sh</code>  </p>
+<p>You can edit this with your editor of choice, but I like nano:<br><code>nano makeDVD.sh</code></p>
+<p>then you can cut and paste this into the file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">TEMPFILE=movietemp.mpg</div><div class="line">ISONAME=<span class="variable">$2</span></div><div class="line"><span class="built_in">export</span> VIDEO_FORMAT=PAL</div><div class="line"></div><div class="line">ffmpeg -i <span class="string">"<span class="variable">$1</span>"</span> -target pal-dvd -qscale 0 <span class="variable">$TEMPFILE</span></div><div class="line">mkdir DVD</div><div class="line">dvdauthor --title <span class="_">-f</span> <span class="variable">$TEMPFILE</span> -o DVD</div><div class="line">dvdauthor -T -o DVD</div><div class="line"><span class="comment"># Navigate to folder containing VIDEO_TS</span></div><div class="line"><span class="built_in">cd</span> DVD</div><div class="line">mkisofs -v -dvd-video -o <span class="variable">$ISONAME</span> .</div><div class="line"><span class="built_in">echo</span> <span class="string">'Burn disc now, 1 for true 0 for false? '</span></div><div class="line"><span class="built_in">read</span> boole</div><div class="line"><span class="keyword">if</span> [ <span class="variable">$boole</span> <span class="_">-eq</span> 1 ]; <span class="keyword">then</span></div><div class="line">    growisofs -dvd-compat -Z /dev/sr0=<span class="variable">$ISONAME</span></div><div class="line"><span class="keyword">else</span></div><div class="line">    <span class="built_in">exit</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure></p>
+<h3 id="Environment-Variable"><a href="#Environment-Variable" class="headerlink" title="Environment Variable"></a>Environment Variable</h3><p>Above you will notice the line stating<br><code>export VIDEO_FORMAT=PAL</code></p>
+<p>This is here because <code>mkisofs</code> will fail if it is not set to either PAL or NSTC</p>
+<h3 id="Running-the-script"><a href="#Running-the-script" class="headerlink" title="Running the script"></a>Running the script</h3><p>Before you can run the script you will want to make it executable, you can do this by entering the following command:<br><code>chmod +x makeDVD.sh</code></p>
+<h3 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h3><p>You can downoad the script <a href="https://raw.githubusercontent.com/Code-Tap/bash-scripts/master/makeDVD.sh" title="makeDVD Bash Script" target="_blank" rel="external">here</a></p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>To use this script you will use the following format:<br><code>./makeDVD.sh sourceVideo.avi resultingISO.iso</code></p>
+
+  </div>
+</article>
+
+
+
+      </div>
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2016 The Code_Tap
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Archives</a></li>
+         
+          <li><a href="https://github.com/Code-Tap">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
